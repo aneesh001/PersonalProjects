@@ -7,6 +7,10 @@ hosts_path = r"/etc/hosts"
 redirect = "127.0.0.1"
 website_list = ["www.facebook.com", "facebook.com"]
 
+# Before using replace host_temp with hosts_path in this function.
+# This will only work on MAC and Linux.
+# The hosts_path for windows is different.
+# CAUTION: BACK-UP YOUR HOSTS FILE BEFORE USING.
 def blocker():
 	while True:
 		start = dt(dt.now().year, dt.now().month, dt.now().day, 12)
